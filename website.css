@@ -53,7 +53,7 @@
 }
 
 #CvScreen {
-    height: 2400px;
+    height: 2600px;
     overflow: hidden;
     background-color: white;
     color: black;
@@ -138,7 +138,7 @@ h1 {
     font-size: 28px;
     border: 1px solid white;
     position: absolute;
-    left: calc(50vw - 1/2 * max(250px, 25vw));
+    left: calc(50vw - 1/2 * 270px);
     color: white;
     /* top: 87.5vh; */
 }
@@ -251,6 +251,17 @@ h2 {
     font-style: normal;
 }
 
+div.cvHeader {
+     position: -webkit-sticky; /* Safari */
+     position: sticky;
+     top: 0;
+     border: 1px black solid;
+}
+
+a.black {
+    color: black;
+}
+
 h3 {
     font-size: 56px;
 }
@@ -281,7 +292,7 @@ ul {
 
 
 
-a:link {
+#projectsScreen a:link {
     text-decoration: none;
     color: white;
 }
