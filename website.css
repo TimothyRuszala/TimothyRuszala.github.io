@@ -79,7 +79,7 @@
     height: 60vh;
     /* border: 1px solid white; */
     display: inline-block;
-    width: 50vw;
+    width: 60vw;
     position: absolute;
     top: 15vh;
     left: 8vw;
@@ -344,6 +344,7 @@ div .projInfo:hover {
     display: block;
 }
 
+/* For mobile—eventually convert everything to mobile-first */
 @media screen and (max-width: 600px) {
 
     #bio p {
@@ -351,15 +352,51 @@ div .projInfo:hover {
         width: 95vw;
     }
 
+    .hello {
+        width: 100vw;
+    }
+
     h1 {
-        font-size: 24vw;
+        font-size: 80px;
     }
 
     h2 {
         font-size: 19vw;
     }
 
+    .headshot {
+        display: none;
+    }
+
     .hoverBox a {
         font-size: 7vw;
+    }
+
+    #CvScreen {
+        height: 2300px;
+    }
+
+    .cv h2 {
+        font-size: 50px;
+    }
+
+    .cv h3 {
+        font-size: 7vw;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .cvItems {
+        width: 80vw;
+    }
+
+    div.cvHeader {
+        border: none;
+    }
+
+    #contact div {
+        margin: 5px 20px;
     }
 }
