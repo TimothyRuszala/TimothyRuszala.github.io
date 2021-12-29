@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="website.css" />
+    <title>Hi! I'm Tim.</title>
+  </head>
+  <body>
+    <div class="content">
+      <!-- <header></header>
+    <nav></nav> -->
+      <div id="topScreen">
+        <div class="hello">
+          <h1>
+            Hi! <br />
+            I'm Tim.
+          </h1>
+        </div>
+        <!-- <img class="me" src="tempPhoto.jpg" /> -->
+        <a href="#bioScreen">
+          <div class="scrollButton topScreen readBio">Read my bio...</div>
+        </a>
+        <a href="#projectsScreen">
+          <div class="scrollButton topScreen seeProjects">
+            See my projects...
+          </div>
+        </a>
+        <a href="#CvScreen">
+          <div class="scrollButton topScreen readCV">Curriculum Vitae...</div>
+        </a>
+      </div>
+      <div id="bioScreen">
+        <div class="headshot">
+          <img class="headshotPhoto" src="Images/headshotClear.png" />
+        </div>
+        <h2>Who am I?</h2>
+        <div id="bio">
+          <p>
+            <strong
+              ><em>I'm Tim Ruszala, and I'm a software developer.</em></strong
+            >
+            I graduated from Princeton summa cum laude with a musicology (!)
+            degree, but since then I've decided to channel my creative energies
+            into computers. Right now I'm studying computer science at the
+            Technical University of Berlin to touch up my computer know-how.<br />
+            <br />On this website you'll find a few projects that I've made for
+            fun to consolidate what I've learned, mostly written in Java,
+            Python, and HTML/CSS/Javascript. Scroll down further to see my CV.
+            <br /><br />
+            Thank you for visiting! &#128522;
+          </p>
+        </div>
+        <a href="#topScreen">
+          <div class="scrollButton bioScreen home">Back to the top...</div>
+        </a>
+        <a href="#projectsScreen">
+          <div class="scrollButton bioScreen seeProjects">
+            See my projects...
+          </div>
+        </a>
+        <a href="#CvScreen">
+          <div class="scrollButton bioScreen readCV">Curriculum Vitae...</div>
+        </a>
+      </div>
+      <div id="projectsScreen">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <div class="hoverBox">
+              <a
+                target="_blank"
+                href="https://www.figma.com/file/NRDPinTek9W6F5unS909Rr/Lotus-Separations?node-id=0%3A1"
+                >Lotus Separations</a
+              >
+            </div>
+            <div class="projInfo">
+              <img src="Images/Lotus.png" />
+              <p>
+                A business website built for Lotus Separations on commission.
+                (The website is not yet live, but Figma design files are
+                available for viewing.)
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="hoverBox">
+              <a
+                target="_blank"
+                href="https://github.com/TimothyRuszala/BeethovenStats"
+                >BeethovenStats</a
+              >
+            </div>
+            <div class="projInfo">
+              <img src="Images/Beethoven.jpg" />
+              <p>
+                A python suite which I created and used to gather statistics
+                about harmonies in the Beethoven String Quartets.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="hoverBox">
+              <a target="_blank" href="https://blog4dogs.herokuapp.com/"
+                >Blog4Dogs</a
+              >
+            </div>
+            <div class="projInfo">
+              <img src="Images/3d_dog.jpg" />
+              <p>
+                A silly but functional internet forum I made with Django,
+                intended for use by dogs. Feel free to make an account for your
+                dog and post something!
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="hoverBox">
+              <a target="_blank" href="/StaycationAid/">StaycationAid</a>
+            </div>
+            <div class="projInfo">
+              <img src="Images/StaycationAid.png" />
+              <p>
+                A web app which asks for your location, then shows you a city
+                experiencing the same current temperature.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div class="hoverBox">
+              <a
+                target="_blank"
+                href="https://github.com/TimothyRuszala/JavaProjects"
+                >School Projects</a
+              >
+            </div>
+            <div class="projInfo">
+              <img src="Images/PrincetonLogo.png" />
+              <p>
+                A portfolio of projects I completed while taking Algorithms and
+                Data Structures at Princeton University.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="hoverBox">
+              <a
+                target="_blank"
+                href="https://github.com/TimothyRuszala/TowerOfDoom"
+                >ApocalypseMachine</a
+              >
+            </div>
+            <div class="projInfo">
+              <img src="Images/TowerOfDoom.png" />
+              <p>
+                Visualizes the recursive solution to a Towers of Hanoi puzzle
+                using 64 discs. This program will take nearly six hundred
+                million years to complete.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="hoverBox">
+              <a
+                target="_blank"
+                href="https://github.com/TimothyRuszala/IndexMaker"
+                >IndexMaker</a
+              >
+            </div>
+            <div class="projInfo">
+              <img src="Images/veroneseperseus.jpg" />
+              <p>
+                A tool I made to help a good friend make an index for his
+                forthcoming translation of Ovid's Metamorphoses.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <a href="#topScreen">
+          <div class="scrollButton projectsScreen home">Back to the top...</div>
+        </a>
+        <a href="#bioScreen">
+          <div class="scrollButton projectsScreen readBio">Read my bio...</div>
+        </a>
+        <a href="#CvScreen">
+          <div class="scrollButton projectsScreen readCV">
+            Curriculum Vitae...
+          </div>
+        </a>
+      </div>
+      <div id="CvScreen" class="cv">
+        <h2>Curriculum Vitae</h2>
+        <div class="cvHeader">
+          <h4 class="contactInfo">
+            <strong>Tim Ruszala </strong> | Fairfield, NJ USA<br />+1
+            862-520-8450 | truszala(at)gmail.com<br /><a
+              class="black"
+              href="linkedin.com/in/timruszala"
+              >Linkedin</a
+            >
+            <a class="black" href="github.com/TimothyRuszala">GitHub</a>
+          </h4>
+        </div>
+        <div class="cvItems">
+          <div>
+            <h3><br />Education</h3>
+            <hr class="cvLine" />
+          </div>
+          <h4>
+            <strong>Princeton University</strong>, September 2016 — June 2020<br />
+            A.B. in Music, <em>summa cum laude</em>, GPA: 3.946<br />
+            Certificate in European Cultural Studies<br /><br />
+
+            <strong>Technical University of Berlin</strong>, September 2021 —
+            Present<br />
+            Bachelor in Computer Science
+          </h4>
+          <div>
+            <h3><br />Honors</h3>
+            <hr />
+          </div>
+          <h4>
+            Asher Hinds Thesis Prize for Excellence in European Cultural Studies
+            (June 2020)<br />
+            Elected to the Phi Beta Kappa society (June 2020)<br />
+            Shapiro Prize for Academic Excellence (September 2018)<br />
+            Bassoonist in the National Youth Orchestra of the United States of
+            America (2016)
+          </h4>
+          <div>
+            <h3><br />Skills</h3>
+            <hr />
+          </div>
+          <h4>
+            Coding Languages: Java, Python, Javascript, HTML/CSS, C<br />
+            Language Languages: Fluent German, Intermediate French, Intermediate
+            Italian, Intermediate Polish, Latin comprehension
+          </h4>
+          <div>
+            <h3><br />Work Experience</h3>
+            <hr />
+          </div>
+          <h4>
+            <strong>Web Developer at Lotus Operations</strong>, 2021 —
+            Present<br />
+            <li>
+              Designed the business website of Lotus operations in direct
+              conversation with the CEO, prototyping using Figma and
+              implementing with HTML, CSS, Javascript, and Django.
+            </li>
+            <br />
+            <strong>Research Assistant to Professor Dmitri Tymoczko</strong>,
+            Summer 2019<br />
+            <li>
+              Cleaned analysis files of the Beethoven String Quartets for use in
+              computer-aided statistical harmonic analysis
+            </li>
+            <br />
+            <strong>Research Assistant to Professor Simon Morrison</strong>,
+            2017 — 2019<br />
+            <li>
+              Selected, interpreted, and summarized research on various topics
+              in 20th century music
+            </li>
+            <br />
+            <strong>Intern at FrankfurtMain Kulturfonds</strong>, August 2018<br />
+            <li>
+              Organized art education events and donor events in the Frankfurt
+              metropolitan area
+            </li>
+            <br />
+            <strong>Office Assistant at Princeton University Concerts</strong>,
+            Spring 2017<br />
+            <li>
+              Gathered historical data to put together a retrospective of
+              Princeton University Concerts history.
+            </li>
+          </h4>
+          <div>
+            <h3><br />Leadership</h3>
+            <hr />
+          </div>
+          <h4>
+            Chair of the Student Ambassadors of Princeton University Concerts,
+            2016 — 2019<br />
+            Music Director of Theatre Intime, 2017 — 2019<br />
+            Orchestral Director and Conductor of Contrapunctus XIV, 2017 —
+            2018<br />
+            Director of the Rockefeller Classical Music Hour, 2017 — 2018
+          </h4>
+        </div>
+        <a href="#topScreen">
+          <div class="scrollButton cv home">Back to the top...</div>
+        </a>
+        <a href="#bioScreen">
+          <div class="scrollButton cv readBio">Read my bio...</div>
+        </a>
+        <a href="#projectsScreen">
+          <div class="scrollButton cv seeProjects">See my projects...</div>
+        </a>
+      </div>
+      <div id="contact">
+        <div class="bottomContact">
+          <h4>Tim Ruszala</h4>
+          <h4>truszala(at)gmail.com</h4>
+          <h4>+1 862-520-8450</h4>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>

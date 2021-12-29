@@ -1,0 +1,400 @@
+:root {
+    --accent-color1: rgb(253, 255, 107);
+    --accent-color2: rgb(114, 60, 231);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    /* color:white;  */
+}
+
+
+.content {
+    height: 100vh;
+    overflow: scroll;
+    /* Note: scroll-snap is generally a good idea but makes the page kind of laggy. 
+    Better would be to have the screen get "stuck" for a second when you scroll.*/
+    /* scroll-snap-type: y mandatory; */
+}
+
+
+#topScreen {
+    height: max(100vh, 600px);
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    /* scroll-snap-align: start; */
+    position: relative;
+}
+
+#bioScreen {
+    height: max(100vh, 600px);
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    background-color: var(--accent-color1);
+    color: black;
+    /* scroll-snap-align: start; */
+    position: relative;
+}
+
+
+#projectsScreen {
+    height: max(100vh, 700px);
+    overflow: hidden;
+    background-color: var(--accent-color2);
+    color: white;
+    /* scroll-snap-align: start; */
+    position: relative;  
+}
+
+#CvScreen {
+    height: 200vw;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    /* scroll-snap-align: start; */
+    position: relative;
+}
+
+#contact {
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.helloBox {
+    border: 1px solid white;
+    margin: 15vh 0 0;
+
+}
+
+.hello {
+    height: 60vh;
+    display: inline-block;
+    position: absolute;
+    top: 15vh;
+    left: 8vw;
+}
+
+h1 {
+    font-size: 18vh;
+}
+
+.headshot {
+    position: absolute;
+    top: 180px;
+    right: 10vw;
+}
+
+.headshotPhoto {
+    max-height: 50vh;
+    max-width: 30vw;
+    padding: 0;
+}
+
+#bio {
+    width: 40vw;
+    min-width: 450px;
+    font-size: 16px;
+    margin-left: 3vw;
+    margin-top: 3vh;
+}
+
+.scrollButton {
+    display: block;
+    /* width: max(250px, 25vw); */
+    height: 40px;
+    width: 270px;
+    text-align: center;
+    /* font-size: max(30px, 3vw); */
+    font-size: 28px;
+    border: 1px solid white;
+    position: absolute;
+    left: calc(50vw - 1/2 * 270px);
+    color: white;
+    /* top: 87.5vh; */
+}
+
+
+
+.topScreen.readBio {
+    bottom: 120px;
+}
+
+.topScreen.seeProjects {
+    /* keeps distance between buttons stable */
+    bottom: 70px;
+}
+
+.topScreen.readCV {
+    bottom: 20px;
+}
+
+.bioScreen.home {
+    /* top: calc(87.5vh - 3.6 * max(30px, 3vw)); */
+    bottom: 120px;
+    color: black;
+    border-color: black;
+}
+
+.bioScreen.seeProjects {
+    /* top: calc(87.5vh - 1.8 * max(30px, 3vw)); */
+    bottom: 70px;
+    color: black;
+    border-color:black;
+}
+
+.bioScreen.readCV {
+    /* top: 87.5vh; */
+    bottom: 20px;
+    color: black;
+    border-color:black;
+}
+
+.projectsScreen.home {
+    /* top: calc(87.5vh - 3.6 * max(30px, 3vw)); */
+    bottom: 120px;
+}
+
+.projectsScreen.readBio {
+    /* top: calc(87.5vh - 1.8 * max(30px, 3vw)); */
+    bottom: 70px;
+}
+
+.projectsScreen.readCV {
+    /* top: 87.5vh; */
+    bottom: 20px;
+}
+
+.cv.home{
+    /* top: calc(307.5vh - 3.6 * max(30px, 3vw)); */
+    color: black;
+    border-color:black;
+    bottom: 120px;
+}
+
+.cv.readBio {
+    /* top: calc(307.5vh - 1.8 * max(30px, 3vw)); */
+    color: black;
+    border-color:black;
+    bottom: 70px;
+}
+
+.cv.seeProjects {
+    /* top: 307.5vh; */
+    color: black;
+    border-color:black;
+    bottom: 20px;
+}
+
+.home:hover {
+    background-color: black;
+    color: white;
+}
+
+.readBio:hover {
+    background-color: var(--accent-color1);
+    color: black;
+}
+
+.seeProjects:hover {
+    background-color: var(--accent-color2);
+    color: white;
+}
+
+.readCV:hover {
+    background-color: white;
+    color: black;
+}
+
+
+h2 {
+    font-size: max(9vw, 14vh);
+    margin-left: 1vw;
+}
+
+.cv h2 {
+    font-size: max(8vw, 50px);
+    text-align: center;
+}
+
+.cv h4.contactInfo {
+    font-size: max(2vw, 16px);
+    text-align: center;
+    font-style: normal;
+}
+
+div.cvHeader {
+     position: -webkit-sticky; /* Safari */
+     position: sticky;
+     top: 0;
+     border: 1px black solid;
+}
+
+a.black {
+    color: black;
+}
+
+.cv h3 {
+    font-size: max(4vw, 24px);
+}
+
+.cv h4 {
+    font-size: max(2vw, 16px);
+    font-weight: 400;
+}
+
+.cvItems {
+    margin-left: 2em;
+    width: 80vw;
+}
+
+.cvItems div {
+    display: inline-block;
+}
+
+#contact div {
+    display: inline-block;
+    margin: 2em 2em 2em;
+    font-size: max(2vw, 16px);
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 3vw;
+    margin-top: 3vh;
+}
+
+
+
+#projectsScreen a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.hoverBox {
+    width: 35vw;
+    min-width: 300px;
+}
+
+.hoverBox:hover a {
+    text-decoration: underline;
+}
+
+.hoverBox a {
+    font-size: 36px;
+}
+
+.projInfo {
+    position: absolute;
+    height: 50vh;
+    width: 350px;
+    top: 24vh;
+    left: 50vw;
+    border: 1px solid white;
+    font-size: 20px;
+    display: none;
+    padding: 10px;
+}
+
+.projInfo img {
+    max-width: 25vw;
+    max-height: 25vh;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3vh;
+}
+
+.hoverBox:hover + div {
+    display: block;
+}
+
+div .projInfo:hover {
+    display: block;
+}
+
+@media screen and (max-width: 800px) {
+    .headshot {
+        display: none;
+    }
+    #CvScreen {
+        height: 210vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .hoverBox:hover + div {
+        display: none;
+    }
+    #CvScreen {
+        height: 220vw;
+    }
+    
+}
+
+/* For mobile—eventually convert everything to mobile-first */
+@media screen and (max-width: 600px) {
+
+    #bio p {
+        width: 95vw;
+    }
+
+    .hello {
+        width: 100vw;
+    }
+
+    .hello h1 {
+        font-size: 22vw;
+    }
+
+    h2 {
+        font-size: 19vw;
+    }
+
+    .headshot {
+        display: none;
+    }
+
+    /* .hoverBox a {
+        font-size: 7vw;
+    } */
+
+    #CvScreen {
+        height: 2300px;
+    }
+
+    .cv h2 {
+        font-size: 50px;
+    }
+
+    .cv h3 {
+        font-size: 24px;
+    }
+
+    .cv h4 {
+        font-size: 16px;
+    }
+
+    .cvItems {
+        width: 80vw;
+    }
+
+    /* div.cvHeader {
+        border: none;
+    } */
+
+    #contact div {
+        margin: 5px 20px;
+    }
+}
